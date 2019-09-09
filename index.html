@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="calc">
+
+        <input type="text" readonly class="display" placeholder="0">
+
+        <div class="nums">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+        </div>
+        <div class="opers">
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button >/</button>
+            <button >.</button>
+            <button >**</button>
+        </div>
+        <button class="eq">=</button>
+                 <button type="button" class="calculator__clear"> c </button>
+
+
+
+    </section>
+
+<form name="calc" id="calculator">
+	<table>
+	<tr>
+	<td>
+		<input type="text" name="input" size="16" class="display">
+	</td>
+	</tr>
+	<tr>
+	<td class="buttons">
+		<input type="button" name="one" value="1" OnClick="calc.input.value += '1'">
+		<input type="button" name="two" value="2" OnClick="calc.input.value += '2'">
+		<input type="button" name="three" value="3" OnClick="calc.input.value += '3'">
+		<input type="button" name="add" value="+" OnClick="calc.input.value += '+'">
+		<br>
+		<input type="button" name="four" value="4" OnClick="calc.input.value += '4'">
+		<input type="button" name="five" value="5" OnClick="calc.input.value += '5'">
+		<input type="button" name="six" value="6" OnClick="calc.input.value += '6'">
+		<input type="button" name="sub" value="-" OnClick="calc.input.value += '-'">
+		<br>
+		<input type="button" name="seven" value="7" OnClick="calc.input.value += '7'">
+		<input type="button" name="eight" value="8" OnClick="calc.input.value += '8'">
+		<input type="button" name="nine" value="9" OnClick="calc.input.value += '9'">
+		<input type="button" name="mul" value="x" OnClick="calc.input.value += '*'">
+		<br>
+		<input type="button" name="clear" value="c" OnClick="calc.input.value = ''">
+		<input type="button" name="zero" value="0" OnClick="calc.input.value += '0'">
+		<input type="button" name="doit" value="=" OnClick="calc.input.value = eval(calc.input.value)">
+		<input type="button" name="div"  value="/" OnClick="calc.input.value += '/'">
+	</td>
+	</tr>
+	</table>
+</form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
